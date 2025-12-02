@@ -1,0 +1,16 @@
+width = 10%
+height = 6%
+border-width = 0
+outline-width = 0
+padding-left = 1%
+padding-top = 1%
+result-spacing = 5 
+font = Noto Mono Nerd Font
+font-size = 10
+background-color = #000000E6
+prompt-text = ""
+placeholder-text = "Search..."
+result-spacing = 2
+
+# selection-color = #fb4934
+selection-color = #b8bb26
