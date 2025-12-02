@@ -27,20 +27,9 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "html",
-        "cssls",
-        "tailwindcss",
         "lua_ls",
-        "emmet_ls",
-        "prismals",
-        "pyright",
 		"clangd",
-		"rust_analyzer",
 		"glsl_analyzer",
-		"asm_lsp",
-		"jdtls",
-		"ts_ls",
-		"matlab_ls",
       },
 
 	  automatic_installation = true,
