@@ -1,0 +1,3 @@
+[connecting to 5ghz]
+nmcli connection modify <SSID> 802-11-wireless.band a 
+nmcli connection up <SSID>

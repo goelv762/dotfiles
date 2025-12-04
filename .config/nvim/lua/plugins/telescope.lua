@@ -30,7 +30,11 @@ return {
           },
         },
 
-	  	file_ignore_patterns = { "include/glm/*", "include/glad/*", "venv/*" },
+	  	file_ignore_patterns = { 
+			"external/glm/*", 
+			"external/glad/*",
+			"external/glfw/*",
+			"venv/*" },
       },
       extensions = {
         ['ui-select'] = {

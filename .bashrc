@@ -4,12 +4,13 @@
 # ______________________________________
 
 # current
-cProject='2d-engine'
+cProject='engine'
 cYear='2025'
 
 # make / run commands
 alias m="cmake -GNinja ..; ninja"
 alias md='cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS_DEBUG="-g -O0" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..; ninja'
+alias mr='cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..; ninja; rm --delete libglad_lib.a external/ CMake* cmake_install.cmake build.ninja'
 alias venv="source venv/bin/activate"
 
 alias gdb="gdb -q"
@@ -51,11 +52,16 @@ rm() {
         return 1
     fi
 
+    # If --delete flag is used, delete directly (bypassing trash-put)
+    if [[ "$1" == "--delete" ]]; then
+        shift  # Remove the --delete flag from the arguments
+        command rm -rf "$@"  # Delete files directly
     # If -rf is used, trash instead
-    if [[ "$1" == "-rf" || "$1" == "-fr" ]]; then
+    elif [[ "$1" == "-rf" || "$1" == "-fr" ]]; then
         shift
-        trash-put "$@"
+        trash-put "$@"  # Use trash-put to move to the trash
     else
+        # Default rm behavior
         command rm "$@"
     fi
 }
@@ -86,7 +92,3 @@ PS1='$ '
 # very old, dont know what it does, probably dont touch?
 # Created by `pipx` on 2024-10-06 09:23:10
 export PATH="$PATH:/home/varun/.local/bin"
-
-# keep at bottom
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
