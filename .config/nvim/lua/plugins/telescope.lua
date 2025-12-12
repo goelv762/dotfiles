@@ -34,6 +34,7 @@ return {
 			"external/glm/*", 
 			"external/glad/*",
 			"external/glfw/*",
+			"assets/*",
 			"venv/*" },
       },
       extensions = {

@@ -29,7 +29,7 @@ return {
       ensure_installed = {
         "lua_ls",
 		"clangd",
-		"glsl_analyzer",
+		"glsl_analyzer"
       },
 
 	  automatic_installation = true,

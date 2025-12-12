@@ -139,6 +139,7 @@ return {
     	lspconfig["clangd"].setup({
 		  capabilities = capabilities,
 		  cmd = { "clangd", "--completion-style=detailed", "--header-insertion=never" },
+		  filetypes = { "c", "cpp", "objc", "objcpp" },
 		})
 	  end,
 
