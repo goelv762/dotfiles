@@ -4,7 +4,7 @@
 # ______________________________________
 
 # current
-cProject='engine'
+cProject='tui'
 cYear='2025'
 
 # make / run commands
