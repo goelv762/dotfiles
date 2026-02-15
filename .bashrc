@@ -21,6 +21,7 @@ alias y="yazi"
 alias n="nvim"
 alias b="bluetuith"
 alias h="Hyprland"
+alias v="vncviewer"
 
 alias count='echo "$(ls -1 | wc -l) files"'
 alias countRec="tree | tail -n 1"
@@ -70,22 +71,7 @@ rm() {
 # ______________________________________
 
 alias grep='grep --color=auto'
-# PS='[\u@\h \W]\$ '
-show_pwd_bottom() {
-    local rows=$(tput lines)
-    tput sc
-    tput cup $((rows - 1)) 0
-    tput el
-    local path="$PWD"
-    # Replace $HOME with ~ if it matches the start of $PWD
-    if [[ "$path" == "$HOME"* ]]; then
-        path="~${path#$HOME}"
-    fi
-    echo -n "$path"
-    tput rc
-}
 
-PROMPT_COMMAND=show_pwd_bottom
 PS1='$ '
 . "$HOME/.cargo/env"
 
