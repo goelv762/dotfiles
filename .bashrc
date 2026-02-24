@@ -21,7 +21,7 @@ alias y="yazi"
 alias n="nvim"
 alias b="bluetuith"
 alias h="Hyprland"
-alias v="vncviewer"
+alias r="kitty +kitten ssh z5773684@cse.unsw.edu.au"
 
 alias count='echo "$(ls -1 | wc -l) files"'
 alias countRec="tree | tail -n 1"
