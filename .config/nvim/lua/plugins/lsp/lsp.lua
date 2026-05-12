@@ -151,6 +151,16 @@ return {
         })
       end,
 
+	  ["verible"] = function()
+        lspconfig["asm_lsp"].setup({
+          capabilities = capabilities,
+          cmd = {
+			"verible-verilog-ls",
+			"--rules=-no-tabs",
+		},
+        })
+      end,
+
       ["lua_ls"] = function()
         -- configure lua server (with special settings)
         lspconfig["lua_ls"].setup({
@@ -168,6 +178,19 @@ return {
           },
         })
       end,
+
+	  ["arduino_language_server"] = function()
+	  lspconfig.arduino_language_server.setup({
+		capabilities = capabilities,
+		cmd = {
+		  "arduino-language-server",
+		  "-cli", "arduino-cli",
+		  "-cli-config", vim.fn.expand("~/.arduino15/arduino-cli.yaml"),
+		  "-fqbn", "arduino:avr:uno",
+		},
+	  })
+	end
+
     })
   end,
 }
