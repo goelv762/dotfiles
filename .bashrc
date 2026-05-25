@@ -4,9 +4,6 @@
 # ______________________________________
 
 # current
-cProject='tui'
-cYear='2025'
-
 # make / run commands
 alias m="cmake -GNinja ..; ninja"
 alias md='cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS_DEBUG="-g -O0" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..; ninja'
@@ -34,12 +31,6 @@ alias days="~/projects/info/src/main.sh"
 # alias vpn="sudo --preserve-env=WAYLAND_DISPLAY,XDG_RUNTIME_DIR,QT_QPA_PLATFORM dbus-run-session -- nekoray > /dev/null 2>&1"
 
 alias ls="eza -l --git --no-user --no-permissions --no-time --no-filesize"
-# project stuff
-# ______________________________________
-
-alias p="cd ~/projects/$cProject/; nvim"
-alias pt="cd ~/projects/$cProject/"
-
 # trash
 # ______________________________________
 rm() {
