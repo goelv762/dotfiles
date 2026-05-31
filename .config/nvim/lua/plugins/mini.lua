@@ -10,6 +10,8 @@ require('mini.pairs').setup()
 require('mini.completion').setup()
 -- finding stuff
 require('mini.surround').setup()
+-- git
+require('mini.diff').setup()
 -- snippets
 require('mini.snippets').setup({
   expand = {

@@ -65,6 +65,5 @@ alias grep='grep --color=auto'
 PS1='$ '
 . "$HOME/.cargo/env"
 
-# very old, dont know what it does, probably dont touch?
 # Created by `pipx` on 2024-10-06 09:23:10
 export PATH="$PATH:/home/varun/.local/bin"
