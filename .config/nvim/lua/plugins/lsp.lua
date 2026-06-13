@@ -10,8 +10,18 @@ vim.lsp.config('clangd', {
     },
 })
 
+vim.lsp.config('arduino_language_server', {
+    cmd = {
+        'arduino-language-server',
+        '-cli', 'arduino-cli',
+        '-clangd', 'clangd',
+        '-fqbn', 'arduino:avr:uno',
+    },
+})
+
 vim.lsp.enable({
 	'lua_ls',
-	'clangd'
+	'clangd',
+	'arduino_language_server'
 })
 
