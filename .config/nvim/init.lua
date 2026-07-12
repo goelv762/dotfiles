@@ -4,6 +4,7 @@ require('plugins.lsp')
 require('plugins.fsf')
 require('plugins.treesitter')
 require('plugins.greeter')
+require('plugins.preview')
 
 require('config.binds')
 require('config.opts')

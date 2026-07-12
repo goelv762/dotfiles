@@ -22,6 +22,8 @@ vim.lsp.config('arduino_language_server', {
 vim.lsp.enable({
 	'lua_ls',
 	'clangd',
-	'arduino_language_server'
+	'arduino_language_server',
+	'matlab_ls',
+	'tinymist'
 })
 
