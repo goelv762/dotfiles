@@ -24,6 +24,7 @@ vim.lsp.enable({
 	'clangd',
 	'arduino_language_server',
 	'matlab_ls',
-	'tinymist'
+	'tinymist',
+	'svlangserver'
 })
 

@@ -25,9 +25,6 @@ alias countRec="tree | tail -n 1"
 alias size="du -h"
 alias roblox="flatpak run org.vinegarhq.Sober"
 
-alias neofetch="neofetch | sed 's/ with Radeon Graphics//';  date | sed 's/ NZST//'"
-alias days="~/projects/info/src/main.sh"
-
 # alias vpn="sudo --preserve-env=WAYLAND_DISPLAY,XDG_RUNTIME_DIR,QT_QPA_PLATFORM dbus-run-session -- nekoray > /dev/null 2>&1"
 
 alias ls="eza -l --git --no-user --no-permissions --no-time --no-filesize"
@@ -64,6 +61,9 @@ alias grep='grep --color=auto'
 
 PS1='$ '
 . "$HOME/.cargo/env"
+
+# pfetch
+export PF_INFO="ascii title os host kernel"
 
 # Created by `pipx` on 2024-10-06 09:23:10
 export PATH="$PATH:/home/varun/.local/bin"
