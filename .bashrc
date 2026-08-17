@@ -8,7 +8,7 @@
 alias m="cmake -GNinja ..; ninja"
 alias md='cmake -GNinja -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS_DEBUG="-g -O0" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON ..; ninja'
 alias mr='cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..; ninja; rm --delete libglad_lib.a external/ CMake* cmake_install.cmake build.ninja'
-alias venv="source venv/bin/activate"
+alias venv="source .venv/bin/activate"
 
 alias gdb="gdb -q"
 

@@ -10,7 +10,8 @@
 }
 
 window#waybar {
-    background: transparent;
+	background: #282828;
+    /* background: transparent; */
 }
 
 tooltip {

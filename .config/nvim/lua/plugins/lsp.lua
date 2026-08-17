@@ -25,6 +25,8 @@ vim.lsp.enable({
 	'arduino_language_server',
 	'matlab_ls',
 	'tinymist',
-	'svlangserver'
+	'svlangserver',
+	'pyright',
+	'rust_analyzer'
 })
 
