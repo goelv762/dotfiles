@@ -1,4 +1,3 @@
 # Dots
 type xie
-
-<img width="1920" height="1196" alt="bg" src="https://github.com/user-attachments/assets/dfe8043d-983e-4278-8900-a70bb3c11788" />
+<img width="1920" height="1200" alt="bg" src="https://github.com/user-attachments/assets/e92dea3f-9066-4e84-b4be-1948af327552" />
