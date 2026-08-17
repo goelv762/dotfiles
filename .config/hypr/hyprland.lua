@@ -8,10 +8,10 @@
 -- variables.conf  (was: $var = ...)
 -- ---------------------------------------------
 local terminalBash = "kitty -e bash"
-local terminalZsh   = "kitty -e zsh"
-local fileManager    = "dolphin"
-local menu            = "tofi-run | xargs -r sh -c "
-local mainMod          = "ALT"
+local terminalZsh  = "kitty -e zsh"
+local fileManager  = "dolphin"
+local menu         = "tofi-run | xargs -r sh -c "
+local mainMod      = "SUPER"
 
 -- ---------------------------------------------
 -- monitors (was: monitor = ...)
@@ -59,8 +59,8 @@ hl.config({
         kb_layout  = "us",
         kb_variant = "",
         kb_model   = "",
-        kb_options = "caps:swapescape",
-        kb_rules   = "",
+        kb_options = "caps:swapescape,altwin:swap_lalt_lwin",
+		kb_rules   = "",
 
         follow_mouse   = 1,
         accel_profile  = "flat",
