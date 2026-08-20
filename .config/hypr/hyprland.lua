@@ -120,6 +120,11 @@ hl.animation({ leaf = "workspaces", enabled = true, speed = 2,   bezier = "defau
 -- ---------------------------------------------
 -- workspace.conf  (was: windowrule { ... })
 -- ---------------------------------------------
+hl.workspace_rule({
+    workspace = "w[1]",
+	border_size = 0,
+})
+
 hl.window_rule({
     name = "suppress",
     match = { class = ".*" },
