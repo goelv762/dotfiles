@@ -20,10 +20,9 @@ alias b="bluetuith"
 alias r="ssh z5773684@cse.unsw.edu.au"
 
 alias count='echo "$(ls -1 | wc -l) files"'
-alias countRec="tree | tail -n 1"
 
 alias size="du -h"
-alias roblox="flatpak run org.vinegarhq.Sober"
+alias roblox="flatpak run org.vinegarhq.Sober & disown"
 
 # alias vpn="sudo --preserve-env=WAYLAND_DISPLAY,XDG_RUNTIME_DIR,QT_QPA_PLATFORM dbus-run-session -- nekoray > /dev/null 2>&1"
 

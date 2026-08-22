@@ -23,7 +23,8 @@ require("telescope").setup({
 		file_ignore_patterns = {
 			"assets/.*",
 			"vendor/.*",
-			"thirdparty/.*"
+			"thirdparty/.*",
+			"external/.*"
 		},
 
 		path_display = { "filename_first" }
