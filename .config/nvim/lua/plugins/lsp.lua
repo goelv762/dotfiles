@@ -7,6 +7,8 @@ vim.lsp.config('clangd', {
     cmd = {
         'clangd',
         '--header-insertion=never',
+		-- pio stuff
+        '--query-driver=/home/varun/.platformio/packages/toolchain-xtensa-esp-elf/bin/*',
     },
 })
 
@@ -27,6 +29,6 @@ vim.lsp.enable({
 	'tinymist',
 	'svlangserver',
 	'pyright',
-	'rust_analyzer'
+	'rust_analyzer',
 })
 

@@ -18,6 +18,7 @@ alias y="yazi"
 alias n="nvim"
 alias b="bluetuith"
 alias r="ssh z5773684@cse.unsw.edu.au"
+alias h="start-hyprland"
 
 alias count='echo "$(ls -1 | wc -l) files"'
 
@@ -66,3 +67,12 @@ export PF_INFO="ascii title os host kernel"
 
 # Created by `pipx` on 2024-10-06 09:23:10
 export PATH="$PATH:/home/varun/.local/bin"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+test -r '/home/varun/.opam/opam-init/init.sh' && . '/home/varun/.opam/opam-init/init.sh' > /dev/null 2> /dev/null || true
+# END opam configuration

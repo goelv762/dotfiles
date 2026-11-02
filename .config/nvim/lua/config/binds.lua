@@ -7,3 +7,4 @@ vim.api.nvim_set_keymap('v', '<F1>', '<Nop>', { noremap = true, silent = true })
 vim.keymap.set("i", "<C-j>", "<C-n>")
 vim.keymap.set("i", "<C-k>", "<C-p>")
 
+vim.keymap.set('n', '<leader>ga', vim.diagnostic.open_float, { desc = 'show diagnostic' })

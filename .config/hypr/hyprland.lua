@@ -15,6 +15,7 @@ hl.monitor({
     scale = "1",
 })
 
+-- docking station out
 hl.monitor({
     output = "DP-2",
     mode = "1920x1080@60",
@@ -22,7 +23,14 @@ hl.monitor({
     scale = "1",
 })
 
--- monitor = HDMI-A-1, 1920x1080@144, 0x0, 1
+-- hdmi out
+hl.monitor({
+    output = "HDMI-A-1",
+    mode = "1920x1080@60",
+    -- mode = "1920x1080@144",
+    position = "0x0",
+    scale = "1",
+})
 
 hl.workspace_rule({
     workspace = "1",
@@ -44,10 +52,26 @@ hl.workspace_rule({
     monitor = "DP-2",
 })
 
--- workspace = 1, monitor:HDMI-A-1
--- workspace = 2, monitor:HDMI-A-1
--- workspace = 3, monitor:HDMI-A-1
--- workspace = 4, monitor:HDMI-A-1
+-- hl.workspace_rule({
+--     workspace = "1",
+--     monitor = "HDMI-A-1",
+-- })
+--
+-- hl.workspace_rule({
+--     workspace = "2",
+--     monitor = "HDMI-A-1",
+-- })
+--
+-- hl.workspace_rule({
+--     workspace = "3",
+--     monitor = "HDMI-A-1",
+-- })
+--
+-- hl.workspace_rule({
+--     workspace = "4",
+--     monitor = "HDMI-A-1",
+-- })
+
 hl.workspace_rule({
     workspace = "5",
     monitor = "eDP-1",
@@ -61,7 +85,7 @@ local terminalBash = "kitty -e bash"
 local terminalZsh = "kitty -e zsh"
 local fileManager = "dolphin"
 local menu = "tofi-run | xargs -r sh -c"
-local mainMod = "ALT"
+local mainMod = "SUPER"
 
 -- ---------------------------------------------
 -- start.conf
@@ -97,7 +121,7 @@ hl.window_rule({
 hl.window_rule({
     name = "float-dev",
     match = {
-        title = "^(opengl game|python|sim)$",
+        title = "^(opengl game|python|sim|vulk)$",
     },
     float = true,
 })
@@ -118,6 +142,7 @@ hl.bind(mainMod .. " + F11", hl.dsp.submap("clean"))
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminalBash))
 hl.bind(mainMod .. " + SHIFT + RETURN", hl.dsp.exec_cmd(terminalZsh))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("discord"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify-launcher"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("blender"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
@@ -174,7 +199,7 @@ hl.config({
         kb_layout = "us",
         kb_variant = "",
         kb_model = "",
-        kb_options = "caps:swapescape",
+        kb_options = "caps:swapescape,altwin:swap_lalt_lwin",
         kb_rules = "",
         follow_mouse = 1,
         accel_profile = "flat",
