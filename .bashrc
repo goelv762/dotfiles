@@ -17,13 +17,14 @@ alias c="clear"
 alias y="yazi"
 alias n="nvim"
 alias b="bluetuith"
-alias r="ssh z5773684@cse.unsw.edu.au"
 alias h="start-hyprland"
 
 alias count='echo "$(ls -1 | wc -l) files"'
-
 alias size="du -h"
+
 alias roblox="flatpak run org.vinegarhq.Sober & disown"
+
+alias add="easyeda2kicad --full --lcsc_id"
 
 # alias vpn="sudo --preserve-env=WAYLAND_DISPLAY,XDG_RUNTIME_DIR,QT_QPA_PLATFORM dbus-run-session -- nekoray > /dev/null 2>&1"
 
